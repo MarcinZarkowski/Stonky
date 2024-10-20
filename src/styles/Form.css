@@ -1,0 +1,126 @@
+.parent-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height for vertical centering */
+  padding: 20px; /* Optional: Add padding around the container */
+  flex-direction: column;
+}
+
+/* Form container */
+.form-container {
+  width: 100%; /* Set a full width for responsiveness */
+  max-width: 400px; /* Set a max width for the form */
+  padding: 20px; /* Add padding inside the form */
+  background-color: transparent; /* Add a background color */
+  border-radius: 8px; /* Rounded corners */
+}
+.Intro-Box{
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  left:25%;
+  right:25%;
+  margin-top: 50px;
+}
+.WhatIsStonky{
+  font-size: 30px;
+  color:rgb(255, 255, 255);
+  text-align: center;
+  text-decoration:underline;
+}
+.Stonky-Intro{
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: bolder;
+  color:rgb(255, 255, 255);
+  text-shadow: #000000;
+}
+.form {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 100%; 
+}
+.title-form {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; 
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.itemInBox {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #555555;
+  border-radius: 5px;
+  background-color: #3a3a3a; 
+  color: #ffffff; 
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.itemInBox::placeholder {
+  color: #b0b0b0; 
+}
+
+.itemInBox:focus {
+  outline: none;
+  border-color: #888888;
+}
+
+.sign {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color:#357ab8;
+  color: #ffffff; 
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign:disabled {
+  background-color: #333333; 
+  cursor: not-allowed;
+}
+
+.sign:hover:not(:disabled) {
+  background-color: #39b835; 
+}
+.form-link a {
+  margin-top: 3x;
+  
+  color:#39b835;
+
+}
+.form-link a:hover  {
+  color:#357ab8;
+}
+.error{
+  color:red;
+}
+.success{
+  color:rgba(0,185,10,1);
+  font-weight: bolder;
+}
+.description{
+  color:white;
+  font-weight:bold;
+  font-size:14px;
+}
+.another-link{
+  color:#357ab8
+}
+.another-link:hover{
+  color:#39b835
+}

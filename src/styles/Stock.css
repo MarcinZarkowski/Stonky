@@ -1,0 +1,101 @@
+/* Container for the stock card */
+.stock-button {
+    position: relative;
+    background: linear-gradient(45deg, #0e852c, #0074bc);
+    color: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    padding: 15px; 
+    text-align: center;
+    width: 100%; 
+    max-width: 100%;
+    font-size: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Shadow effect */
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    overflow: hidden;
+    box-sizing: border-box; 
+    transition: transform 0.3s ease-in-out; 
+    margin: 0;
+}
+.ticker-holder{
+    height:300px;
+}
+
+.stock-button:hover {
+    transform: scale(1.03); 
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+
+.stock-ticker a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    word-wrap: break-word; 
+}
+
+.stock-date {
+    font-size: 14px;
+    color: white;
+    font-weight: bolder;
+    margin: 5px 0;
+
+}
+.stock-view,
+.stock-delete {
+    flex: 1;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+
+.stock-view {
+    background-color: #00e636;
+}
+
+.stock-view:hover {
+    background-color: rgb(7, 143, 120);
+}
+
+
+.stock-delete {
+    background-color: #ff4d4d;
+}
+
+.stock-delete:hover {
+    background-color: #e60000;
+}
+
+
+.buttons-container {
+    display: flex;
+    gap: 10px; 
+    justify-content: space-between; 
+    width: 100%;
+}
+
+
+.stock-name a {
+    text-align: center;
+    font-size: 14px;
+    color: aquamarine;
+    cursor: pointer;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.stock-name a:hover {
+    text-decoration: underline;
+}
+

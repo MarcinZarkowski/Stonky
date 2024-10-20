@@ -1,0 +1,86 @@
+.navbar {
+    position: absolute;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    padding: 10px; /* Adjusted padding */
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    height: 40px; /* Ensure consistent height */
+}
+.navbar-logo a{
+    color: #fff; 
+    font-size:30px;
+    font-weight: bold; 
+    text-decoration: none;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    
+    left:5px; 
+    
+}
+.logout-link {
+    background: linear-gradient(45deg, #19c644, #059fff); /* Starting gradient */
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.logout-link:hover {
+    background: linear-gradient(45deg, #8416fa, #2575ff); /* Gradient on hover */
+}
+.color{
+    color:rgb(255, 70, 85);
+}
+
+
+.logo-pic{
+    padding-left: 8px;
+    height: 40px;
+    width: 40px;
+   
+}
+.navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 15px;
+    
+   
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px; 
+    transition: color 0.3s ease; 
+    top: 1px;
+}
+
+
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggle-icon {
+    font-size: 28px; 
+    color: #fff;
+}
+

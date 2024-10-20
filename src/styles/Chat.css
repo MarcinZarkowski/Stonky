@@ -1,0 +1,145 @@
+/* General Container Styling */
+.Chatbox {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align messages to the top */
+    height: 100%; 
+    margin-left: 4px;
+    width: calc(100% - 37px);
+    background-color:#141414; /* Light gray background for modern feel */
+    box-shadow: 0 0 15px rgba(98, 98, 98, 0.1);
+    border-radius: 6px;
+    padding: 15px;
+    overflow-y: auto; /* Enable scrolling for overflow */
+}
+
+.Chat__title{
+    display: flex;
+    top:0px;
+    padding:0px;
+    flex-direction: row;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, #51e88d, #3791ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 20px;
+}
+.Chat__title img{
+    margin-top: 10px;
+    background-color: transparent;
+    width:40px;
+    height:40px;
+}
+
+/* Message Container */
+.message-container {
+    display: flex;
+    flex-direction: column; /* Stack the messages vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin: 15px 0; /* Space between messages */
+}
+
+/* User Message Styling */
+.last_query {
+    font-weight:bolder;
+    align-self: flex-end; /* Align user messages to the right */
+    background-color:#0074bc; /* Light blue for user messages */
+    max-width: 60%; /* Limit message width */
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Handle long words */
+    margin-bottom: 10px; /* Space between messages */
+    font-size: 14px;
+  
+}
+
+/* Bot Response Styling */
+.last_response {
+    font-weight: bolder;
+    align-self: flex-start; /* Align bot responses to the left */
+    background-color:#10a33a; /* Light green for bot responses */
+    max-width: 60%; /* Limit message width */
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Handle long words */
+    margin-bottom: 10px; /* Space between messages */
+    font-size: 14px;
+}
+
+/* Input and Button Container */
+.Chat__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center vertically */
+    width: calc(100% - 8px);
+    background-color: transparent;
+    padding: 5px;
+    gap: 5px; /* Gap between input and button */
+    position: relative; /* Allows positioning of the button inside the input */
+    
+}
+
+/* Textarea Field (Input) */
+.Chat__input {
+    flex-grow: 1; /* Takes up remaining space */
+    padding:8px;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    height: 40px;
+    overflow-y:unset; /* Scrollbar for overflow */
+    resize: none; /* Prevent manual resizing */
+    box-sizing: border-box; /* Include padding and borders in height calculation */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+/* Textarea Expanding */
+.Chat__input:focus {
+    border-color: #000000; /* Blue outline on focus */
+    outline: none;
+}
+
+/* Submit Button */
+.Chat__button {
+    padding: 2px;
+    background: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Same height as initial input field */
+}
+.loading {
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%; /* Make it circular */
+    background: conic-gradient(#002886, #6400bc); /* Apply conic gradient */
+    animation: spin 2s linear infinite; /* Rotate animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+/* Image inside button */
+.image_send {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Button Hover Effect */
+.Chat__button:hover {
+    background: linear-gradient(45deg, #002886, #6400bc); /* Darker blue on hover */
+}

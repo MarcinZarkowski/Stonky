@@ -1,0 +1,78 @@
+body {
+    font-family: 'Ariel', sans-serif;
+    background: linear-gradient(90deg, #09bd51, #1d00c3);;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+
+    
+}
+.login-link {
+    background: linear-gradient(45deg, #002886, #6400bc); /* Starting gradient */
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.login-link:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient on hover */
+}
+.page-container {
+    background-color: black;
+    width: 100%;  /* Full viewport width */
+    height: 100%; 
+    position: absolute; /* Keep absolute positioning */
+    top: 60px;  /* Start 85px from the top */
+    left: 0;    /* Align to the left of the page */
+    margin: 0; 
+    padding: 0;
+    box-shadow: aqua 0px 0px 10px; /* Optional shadow effect */
+    overflow: hidden; /* Hide any overflow */
+}
+.page-container h1 {
+    color: white;
+    padding-left: 5px;
+}
+.content {
+    margin: 0; 
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+.stock-chart {
+    flex-shrink: 0; /* Prevent stock chart from shrinking */
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #141414; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Rounded corners */
+    border: 3px solid transparent; /* Add padding around the handle */
+    background-clip: padding-box; /* Clip the background */
+}
+
+/* Hover effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color on hover */
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Background of the scrollbar track */
+    border-radius: 6px; /* Rounded corners for track */
+}
+
+/* Scrollbar corner for two-axis scrolling */
+::-webkit-scrollbar-corner {
+    background-color: transparent; /* Color of the corner where horizontal and vertical scrollbars meet */
+}
