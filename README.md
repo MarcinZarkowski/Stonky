@@ -1,4 +1,5 @@
 # React.js Frontend for Stonky 
+#Demo: https://www.youtube.com/watch?v=WLgpq9QTqIY
 
 -implements Tradview Lightweight Charts module and Tradview widgets for stock ticker charts.
 -was deployed with Docker to Render.com
